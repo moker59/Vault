@@ -8,7 +8,7 @@ if [[ $TRAVIS_PULL_REQUEST == true || "$TRAVIS_BRANCH" != "master" ]]
 then
 	mvn test
 else
-	mvn clean deploy --settings .utility/settings.xml
+	mvn clean --settings .utility/settings.xml
 fi
 
 exit $?
